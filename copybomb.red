@@ -7,6 +7,7 @@
 
 off	equ 3500
 
+lf:	dat #0, #0
 st:	dat #0, #eb+off+1
 ld:	dat #0, #eb
 
@@ -19,10 +20,9 @@ be:
 	mov #eb-st+off+1, $st+off
 	spl bb
 	jmp $be+off
-bb:	add #4, $lf
-	sub #4, $rf
-	mov $3, @lf
-	mov $3, @rf
+bb:	add #4, $rf
+	sub #4, $lf
+	mov $lf, @lf
+	mov $rf, @rf
 	jmp bb
-lf:	dat #0, #0
-eb: rf:	dat #0, #-5
+eb: rf:	dat #0, #0

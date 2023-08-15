@@ -5,10 +5,11 @@
 
 ;assert CORESIZE == 8000
 
-be:	add #4, $lf
-	sub #4, $rf
-	mov $3, @lf
-	mov $3, @rf
-	jmp be
 lf:	dat #0, #0
-rf:	dat #0, #-5
+	org be
+be:	add #4, $rf
+	sub #4, $lf
+	mov $lf, @lf
+	mov $rf, @rf
+	jmp be
+rf:	dat #0, #0

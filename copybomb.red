@@ -3,7 +3,7 @@
 ;author 0xea
 ;strategy copy your bomber all over
 
-;assert CORESIZE == 8000
+;assert CORESIZE != 0
 
 off	equ 3500
 

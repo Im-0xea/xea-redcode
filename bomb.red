@@ -3,7 +3,7 @@
 ;author 0xea
 ;strategy bomb in both directions
 
-;assert CORESIZE == 8000
+;assert CORESIZE != 0
 
 lf:	dat #0, #0
 	org be

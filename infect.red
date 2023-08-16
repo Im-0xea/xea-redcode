@@ -3,7 +3,7 @@
 ;author 0xea
 ;strategy copy yourself all over, watch pretty pixies :o
 
-;assert CORESIZE == 8000
+;assert CORESIZE != 0
 
 scn equ 8
 

@@ -1,7 +1,7 @@
 ;redcode-94
 ;name miaufect
 ;author 0xea
-;strategy copy yourself all over, watch pretty pixies :o
+;strategy scan for code and infect it
 
 ;assert CORESIZE != 0
 

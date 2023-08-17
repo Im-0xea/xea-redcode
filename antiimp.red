@@ -1,4 +1,4 @@
-;redcode--94
+;redcode-94
 ;name antiimp
 ;author 0xea
 

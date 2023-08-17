@@ -1,4 +1,4 @@
-;redcode--94
+;redcode-94
 ;name antidwarf
 ;author 0xea
 
@@ -9,7 +9,6 @@ sc:	dat #0, #-4
 org be
 be:	jmz $be, <sc
 	sub @sc, $sh
-	;mul #-1, $sh
 	add $sc, $sh
 	mov #0, <sh
 	jmp $be
